@@ -10,11 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var diceImageViewOne: UIImageView!
+    @IBOutlet weak var diceImageViewTwo: UIImageView!
+    
+    let diceArray : [UIImage] = [
+        UIImage(named: "DiceOne")!,
+        UIImage(named: "DiceTwo")!,
+        UIImage(named: "DiceThree")!,
+        UIImage(named: "DiceFour")!,
+        UIImage(named: "DiceFive")!,
+        UIImage(named: "DiceSix")!
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func rollBtnTouchUpInside(_ sender: UIButton) {
+        diceImageViewOne.image = diceArray.randomElement()
+        diceImageViewTwo.image = diceArray[Int.random(in: 0...5)]
+    }
+    
 }
 
