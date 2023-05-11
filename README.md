@@ -9,7 +9,8 @@ The objective of this app is to introduce you to the core programming concepts t
 
 I developed a Las Vegas dice app. You can make the die roll at the press of a button
 
-![Las vegas Dicee App](Documentation/LasVegasDiceApp.png | width=100)
+
+<img src="Documentation/LasVegasDiceApp.png" width="200"/>
 
 ## What I learned
 
